@@ -36,7 +36,7 @@ import {   ConfirmDialogComponent} from './confirm-dialog/confirm-dialog.compone
 
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { MenubarModule } from 'primeng/menubar';
 import { SidebarModule } from 'primeng/sidebar';
 import {  NgChartsModule } from 'ng2-charts';
@@ -63,6 +63,16 @@ import { CardModule } from 'primeng/card';
 import { Sidebar } from 'primeng/sidebar';
 import {  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor } from './helpers/jwt.interceptor';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { FullComponent} from './layouts/full/full.component';
+
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+
+import { NavigationComponent } from './shared/header/navigation.component';
+
+
+
 
 
 
@@ -72,7 +82,6 @@ import { JwtInterceptor } from './helpers/jwt.interceptor';
 
 @NgModule({
   declarations: [
-
     AppComponent,
     NavbarComponent,
     PopularComponent,
@@ -84,12 +93,11 @@ import { JwtInterceptor } from './helpers/jwt.interceptor';
     TableReservationComponent,
     ReservationFormComponent,
     AvailableTablesComponent,
-    ConfirmDialogComponent,
-    DashboardComponent,
+    ConfirmDialogComponent, 
     UserLogInComponent,
-    AdminLogInComponent,
-   
+    AdminLogInComponent,   
 
+    
   ],
   imports: [
     BrowserModule,
@@ -128,6 +136,13 @@ import { JwtInterceptor } from './helpers/jwt.interceptor';
   DialogModule,
   PasswordModule,
   CardModule,
+  NgbModule,
+
+
+  FullComponent,
+  SidebarComponent,
+  NavigationComponent,
+
   
   
   

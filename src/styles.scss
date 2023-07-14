@@ -4,6 +4,9 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
+
+// @import url("/src/assets/scss/style.scss");
+
 :root{
     --primary: #FEA116;
     --light: #F1F8FF;
@@ -363,3 +366,6 @@
 // }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
